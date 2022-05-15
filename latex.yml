@@ -5,4 +5,19 @@ on:
       - 'main'
     paths:
       - 'Relazione.tex'
+      jobs:
+  presentation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run latex
   uses: xu-cheng/latex-action@v2
+   with:
+          run: |
+            pdflatex  Relazione.tex
+      - name: Release
+        uses: actions/upload-artifact@v3
+        with:
+          name: main
+          path: Relazione.pdf
