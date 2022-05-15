@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1652609617 "/home/davide/RelLab2/Relazione.tex" "/home/davide/RelLab2/Relazione.pdf" "Relazione" 1652609634
+["pdflatex"] 1652611045 "/home/davide/RelLab2/Relazione.tex" "/home/davide/RelLab2/Relazione.pdf" "Relazione" 1652611045
   "/etc/texmf/web2c/texmf.cnf" 1652544860 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/davide/RelLab2/Relazione.aux" 1652609617 79 4d87dcde51cbc7df2af1eafbb2180ec8 ""
-  "/home/davide/RelLab2/Relazione.tex" 1652609375 261 c659bb00977d2923dc8301545383c844 ""
+  "/home/davide/RelLab2/Relazione.aux" 1652611045 79 4d87dcde51cbc7df2af1eafbb2180ec8 ""
+  "/home/davide/RelLab2/Relazione.tex" 1652611045 268 cb61cc1c93fb3c1963481c5f66d195cb ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf" 1575497931 11158 4b4070404f34892b04d2a98137580bca ""
@@ -102,11 +102,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1652544953 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652544954 4797492 e25012597483129074010514aff2188a ""
-  "Relazione.aux" 1652609617 79 4d87dcde51cbc7df2af1eafbb2180ec8 "pdflatex"
-  "Relazione.tex" 1652609375 261 c659bb00977d2923dc8301545383c844 ""
+  "Relazione.aux" 1652611045 79 4d87dcde51cbc7df2af1eafbb2180ec8 "pdflatex"
+  "Relazione.tex" 1652611045 268 cb61cc1c93fb3c1963481c5f66d195cb ""
   (generated)
-  "Relazione.pdf"
-  "Relazione.log"
   "Relazione.aux"
+  "Relazione.pdf"
   "/home/davide/RelLab2/Relazione.log"
   "/home/davide/RelLab2/Relazione.pdf"
+  "Relazione.log"

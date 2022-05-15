@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.14)  15 MAY 2022 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.14)  15 MAY 2022 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -406,7 +406,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  60i,5n,60p,822b,125s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on /home/davide/RelLab2/Relazione.pdf (1 page, 11004 bytes).
+Output written on /home/davide/RelLab2/Relazione.pdf (1 page, 11925 bytes).
 PDF statistics:
  15 PDF objects out of 1000 (max. 8388607)
  10 compressed objects within 1 object stream
