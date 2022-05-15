@@ -1,8 +1,0 @@
-*.aux
-*.synctex.gz
-*.fdb_latexmk
-*.log
-*.fls
-
-#ide
-.idea
