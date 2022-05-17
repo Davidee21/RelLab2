@@ -8,6 +8,7 @@
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{color}
+\usepackage{circuitikz}
 \usepackage[margin=2cm]{geometry}
 \usepackage{titlesec}
 
@@ -25,12 +26,41 @@
 
 
 \section{Introduzione} 
-Un circuito RLC serie consiste in una resistenza, una induttanza e un condensatore posti in serie. Applicando ai capi del ciruito una differenza di potenziale sinusoidale(aggiungere) ci si aspetta di osservare un preciso andamento, anch'esso sinusoidale, in ognuno degli elementi circuitali. La differenza di potenziale ai capi della resistenza segue la relazione
-$$
-$$
+Un circuito RLC serie consiste in una resistenza, una induttanza e un condensatore posti in serie. Applicando ai capi del ciruito una differenza di potenziale sinusoidale $V_{0}\cos{wt} $ ci si aspetta di osservare un preciso andamento, anch'esso sinusoidale,
+ ai capi di ognuno degli elementi circuitali. L'unica corrente che scorre nel circuito segue la relazione(si veda appendice) 
+\begin{equation}
+  i(t)=\frac{V_{0}}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}\cos{[wt+(\arctan{\frac{1-w^2LC}{wRC}})]}
+\end{equation}
+Utilizzando la (1) si possono scrivere gli andamenti teorici della ddp ai capi della resistenza
+\begin{equation}
+ V_{R}(t)= \frac{V_{0}R}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}\cos{[wt+(\arctan{\frac{1-w^2LC}{wRC}})]}
+\end{equation}
 
+dell'induttanza
+\begin{equation}
+  V_{L}(t)=\frac{V_{0}wL}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}\cos{[wt+(\arctan{\frac{1-w^2LC}{wRC}})+\frac{\pi}{2}]}
+\end{equation}
+e del condensatore
+\begin{equation}
+  V_{C}(t)=\frac{(\frac{V_{0}}{wC})}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}\cos{[wt+(\arctan{\frac{1-w^2LC}{wRC}})-\frac{\pi}{2}]}
+\end{equation}
+Parlare di obiettivi e freq risonanza
 
+\section{Apparato sperimentale e svolgimento}
+\begin{figure}[h!]
+  \begin{center}
+    \begin{circuitikz}
+      \draw (0,0)
+      to[voltage source=$V_S$] (0,2) % The voltage source
+      to[R=$R_1$] (4,2) % The resistor
+      to[short] (4,2)
+      to[L=$L$] (4,0)
+      to[C=$C$] (0,0)
+      to[short] (0,0);
 
-
+    \end{circuitikz}
+    \caption{\textit{Schema del circuito realizzato.}}
+  \end{center}
+\end{figure}
 
 \end{document}
