@@ -52,10 +52,10 @@ e del condensatore
   V_{C}(t)=\frac{(\frac{V_{0}}{wC})}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}\cos{[wt+(\arctan{\frac{1-w^2LC}{wRC}})-\frac{\pi}{2}]}
 \end{equation} 
 
-Ricordando che la pulsazione di risonanza per un circuito RLC è $w_0=\frac{1}{\sqrt{LC}}$ e che il modulo della corrente che scorre nel circuito alla frequenza di risonanza corrispondente è massimo, alla frequenza di risonanza ci si aspetta di 
+Ricordando che la pulsazione di risonanza per un circuito RLC è $w_0=\frac{1}{\sqrt{LC}}$ e che il modulo della corrente che scorre nel circuito alla frequenza di risonanza corrispondente $f_0$ è massimo, alla frequenza di risonanza ci si aspetta di 
 osservare $V_R(t)$ in fase con la sorgente e massimo in ampiezza, $V_L(t)$ in anticipo di $\frac{\pi}{2}$ rispetto alla sorgente e $V_C(t)$ in ritardo di $\frac{\pi}{2}$ rispetto alla sorgente e della stessa ampiezza di  $V_C(t)$. Inoltre ci 
 si aspetta, aumentando $w$, una diminuzione dell'ampiezza di $V_R(t)$ a seguito del massimo in $w_0$, un aumento dell'ampiezza di  $V_L(t)$
-e una diminuzione dell'ampiezza di $V_C(t)$. Parlare di obiettivi(fase) e freq risonanza(significato fisico).
+e una diminuzione dell'ampiezza di $V_C(t)$. Parlare di obiettivi(fase).
 
 
 
@@ -82,11 +82,20 @@ e una diminuzione dell'ampiezza di $V_C(t)$. Parlare di obiettivi(fase) e freq r
     \caption{\textit{Schema del circuito realizzato.}}
   \end{center}
 \end{figure}
-Il circuito RLC è stato realizzato sulla breadboard della scheda di acquisizione NI ELVIS II ed è schematizzato in Figura 1. Esso è alimentato dal function generator di ELVIS di resistenza interna $R_I=50\Omega$ come da specifiche della scheda.Nel ciruito sono presenti, disposti in serie, 
+Il circuito RLC è stato realizzato sulla breadboard della scheda di acquisizione NI ELVIS II ed è schematizzato in Figura 1. Esso è alimentato dal function generator di ELVIS di resistenza interna $R_I=50\Omega$ come da specifiche della scheda. Nel ciruito sono presenti, disposti in serie, 
 una induttanza $L$, un condensatore $C$ una resistenza $R$ e una resistenza $R_L$ che tiene conto della resistenza interna dell'induttore. Tutti i valori delle componenti riportati sono stati misurati utilizzando il multimetro digitale di ELVIS.
-Per verificare il corretto funzionamento delle componenti e del ciruito è stato utilizzato un oscilloscopio, osservando così il comportamento del ciruito alla frequenza di risonanza attesa. Successivamente servendosi di un programma scritto in LabView sono state acquisite le misure delle ddp ai capi del generatore, resistenza, induttanza e consensatore relative ad una pulsazione $w$ molto minore di $w_0$, una uguale a $w_0$ e una molto maggiore di $w_0$.
+Per verificare il corretto funzionamento delle componenti e del ciruito è stato utilizzato un oscilloscopio, osservando così il comportamento del ciruito in un intorno della frequenza di risonanza attesa. Successivamente servendosi di un programma scritto in LabView sono state acquisite le misure delle ddp ai capi del generatore, resistenza, induttanza e consensatore relative ad una pulsazione $w$ molto minore di $w_0$, una uguale a $w_0$ e una molto maggiore di $w_0$.
 Per far questi si è usata una frequenza di acquisizione...
+Infine si è studiato l'andamento della fase e dell'ampiezza della ddp ai capi delle componenti in funzione della frequenza. Per far ciò si è impostato nel funcion generetor uno \textit{sweep} sulla frequenza, con \textit{step} di $100 Hz$ e \textit{step interval} di $100 ms$. 
 
 \section{Risultati e discussione}
-
+\section{Conclusioni}
+\section{Appendice}
+\begin{itemize}
+  \item Per ricavare la (1) è necessario risolvere l'equazione differenziale lineare al secondo ordine
+$$
+L\frac{dI}{dt}+RI+\frac{1}{C}\int{Idt}=V_0\cos{wt}
+$$  
+  
+\end{itemize}
 \end{document}
