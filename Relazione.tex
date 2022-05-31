@@ -10,6 +10,7 @@
 \usepackage{color}
 \usepackage{circuitikz}
 \usepackage[margin=2cm]{geometry}
+\usepackage[scientific-notation=true]{siunitx}
 \usepackage{titlesec}
 
 \titleformat{\paragraph}
@@ -18,18 +19,14 @@
   {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 \title{Analisi di un circuito RLC serie in regime sinusoidale}
-\date{20/05/2022}
-\author{Bertasi Leonardo, Perniola Davide}
+\date{18/05/2022}
+\author{Bertasi Leonardo mat. 970881, Perniola Davide mat. 989409}
 \begin{document}
 \maketitle
 \section{Abstract} 
-Ricordando che la pulsazione di risonanza per un circuito RLC è $w_0=\frac{1}{\sqrt{LC}}$ e che il modulo della corrente che scorre nel circuito alla frequenza di risonanza corrispondente è massimo, alla frequenza di risonanza ci si aspetta di 
-osservare $V_R(t)$ in fase con la sorgente e massimo in ampiezza, $V_L(t)$ in anticipo di $\frac{\pi}{2}$ rispetto alla sorgente e $V_C(t)$ in ritardo di $\frac{\pi}{2}$ rispetto alla sorgente e della stessa ampiezza di  $V_C(t)$. Inoltre ci 
-si aspetta, aumentando $w$, una diminuzione dell'ampiezza di $V_R(t)$ a seguito del massimo in $w_0$, un aumento dell'ampiezza di  $V_L(t)$
-e una diminuzione dell'ampiezza di $V_C(t)$. Parlare di obiettivi(fase) e freq risonanza(significato fisico)
-Ricordando che la pulsazione di risonanza per un circuito RLC è $w_0=\frac{1}{\sqrt{LC}}$ e che il modulo della corrente che scorre nel circuito alla frequenza di risonanza corrispondente è massimo, alla frequenza di risonanza ci si aspetta di 
-osservare $V_R(t)$ in fase con la sorgente e massimo in ampiezza, $V_L(t)$ in anticipo di $\frac{\pi}{2}$ rispetto alla sorgente e $V_C(t)$ in ritardo di $\frac{\pi}{2}$ rispetto alla sorgente e della stessa ampiezza di  $V_C(t)$. Inoltre ci 
-osservare $V_R(t)$ in fase con la sorgente e massimo in ampiezza, $V_L(t)$ in anticipo di $\frac{\pi}{2}$ rispetto alla sorgente e $V_C(t)$ in ritardo di $\frac{\pi}{2}$ rispetto alla sorgente e della stessa ampiezza di  $V_C(t)$. Inoltre ci 
+In questa esperienza si è analizzato il comportamento di un circuito RLC in regime sinusoidale. Misurando le tensioni ai capi delle componenti è stato possibile
+verificare la differenza di comportamento del circuito il un ampio range di frequenze intorno alla frequenza di risonanza attesa $f_0=(7351\pm68)Hz$...
+Inoltre si è studiato l'andamento dell'ampiezza e della fase delle tensioni ai capi delle componenti in funzione della frequenza
 
 
 \section{Introduzione} 
@@ -87,12 +84,13 @@ e una diminuzione dell'ampiezza di $V_C(t)$. Per quanto riguarda la fase inoltre
   \end{center}
 \end{figure}
 Il circuito RLC è stato realizzato sulla breadboard della scheda di acquisizione NI ELVIS II ed è schematizzato in Figura 1. Esso è alimentato dal function generator di ELVIS di resistenza interna $R_I=50\Omega$ come da specifiche della scheda. Nel ciruito sono presenti, disposti in serie, 
-una induttanza $L=10.3mH$, un condensatore $C=45.5nF$ una resistenza $R=330\Omega$ e una resistenza $R_L=34\Omega$ che tiene conto della resistenza interna dell'induttore. Tutti i valori delle componenti riportati sono stati misurati utilizzando il multimetro digitale di ELVIS.
-Per verificare il corretto funzionamento delle componenti e del ciruito è stato utilizzato un oscilloscopio, osservando così il comportamento del ciruito in un intorno della frequenza di risonanza attesa. Successivamente servendosi di un programma scritto in LabView sono state acquisite le misure delle ddp ai capi del generatore, resistenza, induttanza e consensatore relative ad una pulsazione $w$ molto minore di $w_0$, una uguale a $w_0$ e una molto maggiore di $w_0$.
-Per far questi si è usata una frequenza di acquisizione...
-Infine si è studiato l'andamento della fase e dell'ampiezza della ddp ai capi delle componenti in funzione della frequenza. Per far ciò si è impostato nel funcion generetor uno \textit{sweep} sulla frequenza, con \textit{step} di $100 Hz$ e \textit{step interval} di $100 ms$. 
+una induttanza $L=(10.3\pm0.1)mH$, un condensatore $C=(45.5\pm0.4)nF$ una resistenza $R=(330.0\pm0.3)\Omega$ e una resistenza $R_L=(34.5\pm0.1)\Omega$ che tiene conto della resistenza interna dell'induttore. Tutti i valori delle componenti riportati sono stati misurati utilizzando il multimetro digitale di ELVIS.
+Per verificare il corretto funzionamento delle componenti è stato utilizzato un oscilloscopio, osservando così il comportamento del ciruito in un intorno della frequenza di risonanza attesa. Successivamente servendosi di un programma scritto in LabView sono state acquisite le misure delle ddp ai capi del generatore, resistenza, induttanza e consensatore relative ad una frequenza $f_m=3500Hz$, una $f_0=7351Hz$ e  $f_M=10000Hz$ in modo tale da evidenziare le differenze del comportamento del circuito all'interno di un ampio range di frequenze e in particolare alla frequenza di risonanza.
+Per far questo si è usata una frequenza di acquisizione di $\SI{5e4 }Hz$ nel primo caso, di $\SI{1e5 }Hz$ nel secondo e di $\SI{1.5e5 }Hz$ nel terzo, affinchè questa si mantenga ad un valore di almeno dieci volte quello della frquenza del segnale acquisito.
+Infine si è studiato l'andamento della fase e dell'ampiezza della ddp ai capi delle componenti in funzione della frequenza. Per far ciò si è impostato nel funcion generetor uno \textit{sweep} sulla frequenza nel range compreso tra $3000Hz$ e $13000Hz$, con \textit{step} di $100 Hz$ e \textit{step interval} di $100 ms$. 
 
 \section{Risultati e discussione}
+
 \section{Conclusioni}
 \section{Appendice}
 \begin{itemize}
