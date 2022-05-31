@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1653993094 "/home/davide/RelLab2/Relazione.tex" "/home/davide/RelLab2/Relazione.pdf" "Relazione" 1653995393
+["pdflatex"] 1654002283 "/home/davide/RelLab2/Relazione.tex" "/home/davide/RelLab2/Relazione.pdf" "Relazione" 1654003144
   "/etc/texmf/web2c/texmf.cnf" 1652544860 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/davide/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1652546184 11524 ee2eb91bd2305a421c01d378a9090793 ""
-  "/home/davide/RelLab2/Relazione.aux" 1653993094 836 33d116b3d3595740f38d4da2e2a425f0 ""
-  "/home/davide/RelLab2/Relazione.tex" 1653995392 5853 ae188421d67f03f61524704dfd64afe9 ""
+  "/home/davide/RelLab2/Relazione.aux" 1654002283 1178 f80a81d1aa5880e717aa9d727bddd38b ""
+  "/home/davide/RelLab2/Relazione.tex" 1654003144 5963 76497b8aab6871979f55e479632dab12 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -177,11 +177,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1653985648 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1653985649 4882940 8964de8868956e9ca987c994390c31b0 ""
-  "Relazione.aux" 1653993094 836 33d116b3d3595740f38d4da2e2a425f0 "pdflatex"
-  "Relazione.tex" 1653995392 5853 ae188421d67f03f61524704dfd64afe9 ""
+  "Relazione.aux" 1654002283 1178 f80a81d1aa5880e717aa9d727bddd38b "pdflatex"
+  "Relazione.tex" 1654003144 5963 76497b8aab6871979f55e479632dab12 ""
   (generated)
-  "/home/davide/RelLab2/Relazione.pdf"
   "Relazione.pdf"
-  "Relazione.log"
+  "/home/davide/RelLab2/Relazione.pdf"
   "/home/davide/RelLab2/Relazione.log"
+  "Relazione.log"
   "Relazione.aux"
