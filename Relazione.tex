@@ -25,8 +25,8 @@
 \begin{document}
 \maketitle
 \section{Abstract} 
-In questa esperienza si è analizzato il comportamento di un circuito RLC in regime sinusoidale. Misurando le tensioni ai capi delle componenti è stato possibile
-verificare la differenza di comportamento del circuito il un ampio range di frequenze intorno alla frequenza di risonanza attesa $f_0=(7351\pm68)Hz$...
+In questa esperienza si è analizzato il comportamento di un circuito RLC serie in regime sinusoidale. Misurando le tensioni ai capi delle componenti è stato possibile
+verificare la differenza di comportamento tra di esse. A tale scopo si sono acquisiti i dati relativi a tre frequenze significative in un intorno della frequenza di risonanza attesa $f_0=(7351\pm68)Hz$.
 Inoltre si è studiato l'andamento dell'ampiezza e della fase delle tensioni ai capi delle componenti in funzione della frequenza
 
 
@@ -51,13 +51,12 @@ e del condensatore
 \end{equation} 
 
 Ricordando che la pulsazione di risonanza per un circuito RLC è $w_0=\frac{1}{\sqrt{LC}}$ e che il modulo della corrente che scorre nel circuito alla frequenza di risonanza corrispondente $f_0$ è massimo, alla frequenza di risonanza ci si aspetta di 
-osservare $V_R(t)$ in fase con la sorgente e massimo in ampiezza, $V_L(t)$ in anticipo di $\frac{\pi}{2}$ rispetto alla sorgente e $V_C(t)$ in ritardo di $\frac{\pi}{2}$ rispetto alla sorgente e della stessa ampiezza di  $V_C(t)$. Inoltre ci 
-si aspetta, aumentando $w$, una diminuzione dell'ampiezza di $V_R(t)$ a seguito del massimo in $w_0$, un aumento dell'ampiezza di  $V_L(t)$
-e una diminuzione dell'ampiezza di $V_C(t)$. Per quanto riguarda la fase inoltre, notando come 
+osservare $V_R(t)$ in fase con la sorgente e massimo in ampiezza, $V_L(t)$ in anticipo di $\frac{\pi}{2}$ rispetto alla sorgente e $V_C(t)$ in ritardo di $\frac{\pi}{2}$ rispetto alla sorgente e della stessa ampiezza di  $V_C(t)$. In generale si prevede
+un aumento dell'ampiezza di $V_L$ e una diminuzione dell'ampiezza di $V_C$ proporzionale ad $w$, mentre per $V_R$ l'ampiezza aumenta fino al massimo in corrispondenza di $f_0$ per poi decrescere sempre proporzionalmente a $w$. \\Per quanto riguarda la fase inoltre, notando come 
 \begin{equation}
   \lim_{w \to + \infty}\arctan{\frac{1-w^2LC}{wRC}} = -\frac{\pi}{2}
 \end{equation}
-è chiaro aspettarsi, aumentando $w$, la decrescita della fase della ddp ai capi di ogni componente e lo stabilizzarsi di quest'ultima a $-\frac{\pi}{2}$ per $V_R(t)$, 0 per $V_L(t)$ e $-\pi$ per $V_C(t)$.
+è chiaro aspettarsi, aumentando $w$, la decrescita della fase della tensione ai capi di ogni componente e lo stabilizzarsi di quest'ultima a 0 per $V_L(t)$, $-\frac{\pi}{2}$ per $V_R(t)$ e $-\pi$ per $V_C(t)$.
 
 
 
@@ -101,7 +100,7 @@ Infine si è studiato l'andamento della fase e dell'ampiezza della ddp ai capi d
   \includegraphics[scale=0.27]{FitFMag.png}
   \caption{\textit{Confronto tra le tensioni in funzione del tempo ai capi degli elementi circuitali relativi alle tre diverse frequenze utilizzate. In alto $f_m$,in mezzo $f_0$ e in basso $f_M$ .}}
 \end{figure}
-In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
+In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per i tre valori di frequenza scelti. Gli andamenti teorici di ciascuna tensione 
 In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
 In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
 In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
