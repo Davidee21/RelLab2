@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1654002283 "/home/davide/RelLab2/Relazione.tex" "/home/davide/RelLab2/Relazione.pdf" "Relazione" 1654003144
+["pdflatex"] 1654015655 "/home/davide/RelLab2/Relazione.tex" "/home/davide/RelLab2/Relazione.pdf" "Relazione" 1654015672
   "/etc/texmf/web2c/texmf.cnf" 1652544860 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/davide/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1652546184 11524 ee2eb91bd2305a421c01d378a9090793 ""
-  "/home/davide/RelLab2/Relazione.aux" 1654002283 1178 f80a81d1aa5880e717aa9d727bddd38b ""
-  "/home/davide/RelLab2/Relazione.tex" 1654003144 5963 76497b8aab6871979f55e479632dab12 ""
+  "/home/davide/RelLab2/Relazione.aux" 1654015655 1467 a65951a5e6c12e22c0f4fefe8935a6fe ""
+  "/home/davide/RelLab2/Relazione.tex" 1654015672 7535 5bbc7b6b2ecd8067309db1780d786e6c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -177,11 +177,16 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1653985648 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1653985649 4882940 8964de8868956e9ca987c994390c31b0 ""
-  "Relazione.aux" 1654002283 1178 f80a81d1aa5880e717aa9d727bddd38b "pdflatex"
-  "Relazione.tex" 1654003144 5963 76497b8aab6871979f55e479632dab12 ""
+  "AmpFreq.png" 1654015420 16448 1ba06f06162a8ddee60acb6e76c8a685 ""
+  "FaseFreq.png" 1654015413 15751 3afda19fea4a5c9fcba431e0943db073 ""
+  "FitF0.png" 1654013181 40954 341146381d67ae6464db392a37e9d07f ""
+  "FitFMag.png" 1654010899 46123 ac23d015fd18d7853408410278bb4d1b ""
+  "FitFMin.png" 1654013190 45883 c36af26d8dbb4e433cf4afd7f636d6ab ""
+  "Relazione.aux" 1654015655 1467 a65951a5e6c12e22c0f4fefe8935a6fe "pdflatex"
+  "Relazione.tex" 1654015672 7535 5bbc7b6b2ecd8067309db1780d786e6c ""
   (generated)
   "Relazione.pdf"
   "/home/davide/RelLab2/Relazione.pdf"
-  "/home/davide/RelLab2/Relazione.log"
   "Relazione.log"
   "Relazione.aux"
+  "/home/davide/RelLab2/Relazione.log"

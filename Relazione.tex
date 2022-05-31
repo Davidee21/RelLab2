@@ -12,6 +12,7 @@
 \usepackage[margin=2cm]{geometry}
 \usepackage[scientific-notation=true]{siunitx}
 \usepackage{titlesec}
+\usepackage{graphics}
 
 \titleformat{\paragraph}
   {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
@@ -85,14 +86,38 @@ e una diminuzione dell'ampiezza di $V_C(t)$. Per quanto riguarda la fase inoltre
 \end{figure}
 Il circuito RLC è stato realizzato sulla breadboard della scheda di acquisizione NI ELVIS II ed è schematizzato in Figura 1. Esso è alimentato dal function generator di ELVIS di resistenza interna $R_I=50\Omega$ come da specifiche della scheda. Nel ciruito sono presenti, disposti in serie, 
 una induttanza $L=(10.3\pm0.1)mH$, un condensatore $C=(45.5\pm0.4)nF$ una resistenza $R=(330.0\pm0.3)\Omega$ e una resistenza $R_L=(34.5\pm0.1)\Omega$ che tiene conto della resistenza interna dell'induttore. Tutti i valori delle componenti riportati sono stati misurati utilizzando il multimetro digitale di ELVIS.
-Per verificare il corretto funzionamento delle componenti è stato utilizzato un oscilloscopio, osservando così il comportamento del ciruito in un intorno della frequenza di risonanza attesa. Successivamente servendosi di un programma scritto in LabView sono state acquisite le misure delle ddp ai capi del generatore, resistenza, induttanza e consensatore relative ad una frequenza $f_m=3500Hz$, una $f_0=7351Hz$ e  $f_M=10000Hz$ in modo tale da evidenziare le differenze del comportamento del circuito all'interno di un ampio range di frequenze e in particolare alla frequenza di risonanza.
+Per verificare il corretto funzionamento delle componenti è stato utilizzato un oscilloscopio, osservando così il comportamento del ciruito in un intorno della frequenza di risonanza attesa. Successivamente servendosi di un programma scritto in LabView sono state acquisite le misure delle ddp ai capi del generatore, resistenza, induttanza e consensatore relative ad una frequenza $f_m=4000Hz$, una $f_0=7351Hz$ e  $f_M=10000Hz$ in modo tale da evidenziare le differenze del comportamento del circuito all'interno di un ampio range di frequenze e in particolare alla frequenza di risonanza.
 Per far questo si è usata una frequenza di acquisizione di $\SI{5e4 }Hz$ nel primo caso, di $\SI{1e5 }Hz$ nel secondo e di $\SI{1.5e5 }Hz$ nel terzo, affinchè questa si mantenga ad un valore di almeno dieci volte quello della frquenza del segnale acquisito.
 Infine si è studiato l'andamento della fase e dell'ampiezza della ddp ai capi delle componenti in funzione della frequenza. Per far ciò si è impostato nel funcion generetor uno \textit{sweep} sulla frequenza nel range compreso tra $3000Hz$ e $13000Hz$, con \textit{step} di $100 Hz$ e \textit{step interval} di $100 ms$. 
 
 \section{Risultati e discussione}
 \subsection{Tensione in funzione del tempo}
+\begin{figure}[]
+  \centering
+  \includegraphics[scale=0.27]{FitFMin.png}
+  \qquad
+  \includegraphics[scale=0.27]{FitF0.png}
+  \qquad
+  \includegraphics[scale=0.27]{FitFMag.png}
+  \caption{\textit{Confronto tra le tensioni in funzione del tempo ai capi degli elementi circuitali relativi alle tre diverse frequenze utilizzate. In alto $f_m$,in mezzo $f_0$ e in basso $f_M$ .}}
+\end{figure}
+In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
+In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
+In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
+In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
+In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
+In Figura 2 sono riportate le tensioni in funzione del tempo ai capi di ogni elemento del circuito per valori minori uguali e maggiori alla frequenza di risonanza. 
+
 \subsection{Analisi dell'ampiezza}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.4]{AmpFreq.png}
+\end{figure}
 \subsection{Analisi della fase}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.4]{FaseFreq.png}
+\end{figure}
 \section{Conclusioni}
 \section{Appendice}
 \begin{itemize}
