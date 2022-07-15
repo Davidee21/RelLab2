@@ -23,6 +23,7 @@
 	%aspectratio=169, % Uncomment to set the aspect ratio to a 16:9 ratio which matches the aspect ratio of 1080p and 4K screens and projectors
 ]{beamer}
 \usepackage{graphicx}
+\usepackage[export]{adjustbox}
 \graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
 
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
@@ -188,9 +189,19 @@
 
 \begin{frame}
 	\frametitle{Circuito}
-	\begin{figure}[l]
-		\includegraphics[width=50mm]{circuito.png}
-	\end{figure}
+	\begin{figure}[ht]
+		\begin{minipage}[c][3cm]{0.5\linewidth}
+		\centering
+		\includegraphics[%scale=1
+						 width=1\linewidth, valign=t]{Circuito.png}
+		
+		\end{minipage}%
+		\hspace{1cm}
+		\begin{minipage}[c][8cm]{0.35\linewidth}
+			$R_I=50\Omega$ \\ \\
+			$R=(330.0\pm0.3)\Omega$ \\ \\$R_L=(34.5\pm0.1)\Omega$\\ \\$L=(10.3\pm0.1)mH$ \\ \\ $C=(45.5\pm0.4)nF$
+		\end{minipage}
+		\end{figure}
 	
 \end{frame}
 
