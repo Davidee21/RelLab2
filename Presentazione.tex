@@ -24,6 +24,11 @@
 ]{beamer}
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
+\usepackage{comment}
+\usepackage{xcolor}
+\definecolor{forestgreen(web)}{rgb}{0.13, 0.55, 0.13}
+\definecolor{fuchsia}{rgb}{1.0, 0.0, 1.0}
+\usepackage[export]{adjustbox}
 \graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
 
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
@@ -148,7 +153,6 @@
 
 \author[Davide Perniola]{Davide Perniola} % Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
 
-\institute[]{University of Cambridge \\ \smallskip \textit{james@LaTeXTemplates.com}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
 
 \date[18 Luglio, 2022]{Laboratorio di Elettromagnetismo e Ottica \\ 18 Luglio, 2022} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
 
@@ -209,36 +213,56 @@
 
 %------------------------------------------------
 
-\subsection{Acquisizione}
+\subsection{Acquisizione e analisi}
 
 \begin{frame}
-	\frametitle{Acquisizione}
-	
+	\frametitle{Acquisizione e analisi}
+	\begin{figure}[ht]
+		\begin{minipage}[c][3cm]{0.5\linewidth}
+		\centering
+		\includegraphics[%scale=1
+						 width=1\linewidth, valign=t]{elvisII.png}
+		
+		\end{minipage}%
+		\hspace{1cm}
+		\begin{minipage}[c][8cm]{0.35\linewidth}
+			\begin{itemize}
+				\setlength\itemsep{2cm}
+				\item Scheda Elvis II
+				\item Programma scritto in LabVIEW
+				\item Dati elaborati con il softwere ROOT
+			\end{itemize}
+		\end{minipage}
+		\end{figure}
 	
 \end{frame}
 
+\subsection{Svolgimento}
+
+\begin{frame}
+	\frametitle{Svolgimento}
+	\begin{figure}[ht]
+		\begin{minipage}[c][3cm]{0.28\linewidth}
+		\centering
+		\includegraphics[%scale=1
+						 width=1\linewidth, valign=t]{Circuito.png}
+		
+		\end{minipage}%
+		\hspace{0.5cm} 
+		\begin{minipage}[c][6cm][t]{0.605\linewidth}
+			$V(t)=V_{0}\cos{wt} $ \\ \\ \\
+			$i(t)=\frac{V_{0}}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}\cos{[wt+(\arctan{\frac{1-w^2LC}{wRC}})]}$ \\ \\ \\
+			$R(w)=\frac{1}{1+q^2(\frac{w_0}{w}-\frac{w}{w_0})}$ \quad $q=\frac{w_0L}{R}=\frac{1}{R}\sqrt{\frac{L}{C}}$ \\ \\ \\
+			$w_0=\frac{1}{\sqrt{LC}}$ \\ \\
+			Nel caso del nostro circuito \\ \\
+			$q\approx 1.5$ \qquad $f_0=(7351\pm68)Hz$
+ 
+		\end{minipage}
+		\end{figure}
+	
+	
+\end{frame}
 %------------------------------------------------
-
-\subsection{Analisi dati}
-
-\begin{frame}
-	\frametitle{Analisi dati}
-	\framesubtitle{} % Optional subtitle
-	
-	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-		\begin{column}{0.45\textwidth} % Left column width
-			\textbf{Heading}
-			\begin{enumerate}
-				\item Statement
-				\item Explanation
-				\item Example
-			\end{enumerate}
-		\end{column}
-		\begin{column}{0.5\textwidth} % Right column width
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-		\end{column}
-	\end{columns}
-\end{frame}
 
 %------------------------------------------------
 
@@ -247,28 +271,51 @@
 \subsection{Studio qualitativo}
 
 \begin{frame}
-	\frametitle{Studio qualitativo}
-	\framesubtitle{} % Optional subtitle
+	\frametitle{Studio qualitativo: $4000Hz$}
 	
-	\begin{table}
-		\begin{tabular}{l l l}
-			\toprule
-			\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-			\midrule
-			Treatment 1 & 0.0003262 & 0.562 \\
-			Treatment 2 & 0.0015681 & 0.910 \\
-			Treatment 3 & 0.0009271 & 0.296 \\
-			\bottomrule
-		\end{tabular}
-		\caption{Table caption}
-	\end{table}
+		\includegraphics[%scale=1
+						 width=1.06\linewidth]{FitFMin.png}
+		
+		
+\end{frame}
+
+\begin{frame}
+	\frametitle{Studio qualitativo: $f_0$}
+	
+		\includegraphics[%scale=1
+						 width=1.06\linewidth]{FitF0.jpg}
+		
+		
+\end{frame}
+
+\begin{frame}
+	\frametitle{Studio qualitativo: $10000Hz$}
+	
+		\includegraphics[%scale=1
+						 width=1.06\linewidth]{FitFMag.png}
+		
+		
 \end{frame}
 
 \subsection{Analisi dell'ampiezza}
 \begin{frame}
 	\frametitle{Analisi dell'ampiezza}
 	\framesubtitle{} % Optional subtitle
-	
+	\begin{figure}[ht]
+		\begin{minipage}[c][3cm]{0.65\linewidth}
+		\centering
+		\includegraphics[%scale=1
+						 width=1\linewidth, valign=t]{AmpFreq.png}
+		
+		\end{minipage}%
+		\hspace{0.cm}
+		\begin{minipage}[c][6cm][t]{0.33\linewidth}
+			$ \textcolor{fuchsia}{A_R(w) =\frac{V_{0}R}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}}$ \\ \\ \\ \\ \\
+			$ \textcolor{blue}{A_L(w) =\frac{V_{0}wL}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}}$ \\ \\ \\\\ \\
+			$ \textcolor{forestgreen(web)}{A_C(w) =\frac{\frac{V_{0}}{wC}}{\sqrt{R^2+(wL-\frac{1}{wC})^2}}}$ 
+		\end{minipage}
+		$f_0s=(7562\pm5)Hz$
+		\end{figure}
 	
 \end{frame}
 
@@ -276,7 +323,21 @@
 \begin{frame}
 	\frametitle{Analisi della fase}
 	\framesubtitle{} % Optional subtitle
-	
+	\begin{figure}[ht]
+		\begin{minipage}[c][3cm]{0.61\linewidth}
+		\centering
+		\includegraphics[%scale=1
+						 width=1\linewidth, valign=t]{FaseFreq2.png}
+		
+		\end{minipage}%
+		\hspace{0cm}
+		\begin{minipage}[c][6cm][t]{0.381\linewidth}
+			$\textcolor{fuchsia}{\Phi_R(w)=\arctan{\frac{1-w^2LC}{wRC}}}$ \\ \\ \\ \\ \\ 
+			$\textcolor{blue}{\Phi_L(w)=\arctan{(\frac{1-w^2LC}{wRC})}+\frac{\pi}{2}}$ \\ \\ \\ \\ \\ 
+			$\textcolor{forestgreen(web)}{\Phi_C(w)=\arctan{(\frac{1-w^2LC}{wRC})}-\frac{\pi}{2}}$ \\ \\ \\ \\\\
+
+		\end{minipage}
+		\end{figure}
 	
 \end{frame}
 
@@ -286,7 +347,7 @@
 \section{Conclusioni}
 
 \begin{frame}
-	\frametitle{Conclusioni}
+	\frametitle{Conclusioni: problematiche e possibili soluzioni}
 	
 	\begin{definition}
 		A \alert{prime number} is a number that has exactly two divisors.
@@ -309,89 +370,41 @@
 
 %------------------------------------------------
 
-\begin{frame}
-	\frametitle{Theorem, Corollary \& Proof}
-	
-	\begin{theorem}[Mass--energy equivalence]
-		$E = mc^2$
-	\end{theorem}
-	
-	\begin{corollary}
-		$x + y = y + x$
-	\end{corollary}
-	
-	\begin{proof}
-		$\omega + \phi = \epsilon$
-	\end{proof}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-	\frametitle{Equation}
-
-	\begin{equation}
-		\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-	\end{equation}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-	\frametitle{Verbatim}
-	
-	\begin{example}[Theorem Slide Code]
-		\begin{verbatim}
-			\begin{frame}
-				\frametitle{Theorem}
-				\begin{theorem}[Mass--energy equivalence]
-					$E = mc^2$
-				\end{theorem}
-		\end{frame}\end{verbatim} % Must be on the same line
-	\end{example}
-\end{frame}
 
 %------------------------------------------------
 
 
 %------------------------------------------------
 
-\section{Referencing}
-
-\begin{frame}
-	\frametitle{Citing References}
-	
-	An example of the \texttt{\textbackslash cite} command to cite within the presentation:
-	
-	\bigskip % Vertical whitespace
-	
-	This statement requires citation \cite{p1,p2}.
-\end{frame}
 
 %------------------------------------------------
 
-\begin{frame} % Use [allowframebreaks] to allow automatic splitting across slides if the content is too long
-	\frametitle{References}
-	
-	\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below, you may need to use multiple columns and/or reduce the font size further if you have many references
-		\footnotesize % Reduce the font size in the bibliography
-		
-		\bibitem[Smith, 2022]{p1}
-			John Smith (2022)
-			\newblock Publication title
-			\newblock \emph{Journal Name} 12(3), 45 -- 678.
-			
-		\bibitem[Kennedy, 2023]{p2}
-			Annabelle Kennedy (2023)
-			\newblock Publication title
-			\newblock \emph{Journal Name} 12(3), 45 -- 678.
-	\end{thebibliography}
-\end{frame}
+
+%------------------------------------------------
+
+
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGMENTS SLIDE
 %----------------------------------------------------------------------------------------
-
+\begin{frame}
+	\frametitle{Analisi dati}
+	\framesubtitle{} % Optional subtitle
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\begin{column}{0.45\textwidth} % Left column width
+			\textbf{Heading}
+			\begin{enumerate}
+				\item Statement
+				\item Explanation
+				\item Example
+			\end{enumerate}
+		\end{column}
+		\begin{column}{0.5\textwidth} % Right column width
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+		\end{column}
+	\end{columns}
+\end{frame}
 
 
 %----------------------------------------------------------------------------------------
